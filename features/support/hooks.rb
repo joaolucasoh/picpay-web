@@ -30,7 +30,7 @@ at_exit do
     config.report_title = 'PicPay QA Engineer Challenge!'
     config.include_images = true
     config.additional_info = @infos
-    config.color = 'indigo'
+    config.color = 'green'
   end
   ReportBuilder.build_report
 end
