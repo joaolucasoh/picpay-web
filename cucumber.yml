@@ -1,0 +1,6 @@
+default: -p html -p json -p chrome
+html: --format html --out=log/report.html -f pretty
+json: --format json -o log/report.json -f pretty
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+headless: BROWSER=headless
