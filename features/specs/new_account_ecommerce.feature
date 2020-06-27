@@ -19,11 +19,16 @@ Feature: Routine for registering new customers on the picpay ecommerce platform.
             | password_confirmation | 4321   | Os campos de senhas deve corresponder!   |
     
     @completeregister
-    Scenario Outline: Create a complete pf register
+    Scenario Outline: Create a complete pf or pj register
         When I fill in the your access data
         And select the '<type>' of your account
         And after you fill in the data about you
+        Then insert your address
+        And select the '<plan>' and fill in company infos and your '<category>'
+        And upload a avatar to account
+        Then you must confirm the data and complete the registration
         Examples:
-            |type           |
-            | Pessoa Física |
+            | type            | plan    | category                |
+            | Pessoa física   | 14 dias | Arte e Antiguidades     |
+            | Pessoa jurídica | 30 dias | Automóveis e Acessórios |
 

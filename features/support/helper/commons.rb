@@ -5,27 +5,32 @@ module Commons
     find("[formcontrolname='#{field}']")
   end
 
-  def step1?
-    find('h3', 'Escolha suas informações de acesso')
+  def check_page_title_step1
+    find('h3', text: 'Escolha suas informações de acesso')
   end
 
-  def step2?
-    find('h3', 'Você gostaria de se cadastrar como?')
+  def check_page_title_step2
+    find('h3', text: 'Você gostaria de se cadastrar como?')
   end
 
-  def step3?
-    find('h3', 'Sobre você')
+  def check_page_title_step3_pf
+    find('h3', text: 'Sobre você')
   end
 
-  def step4?
-    find('h3', 'Seu endereço')
+  def check_page_title_step3_pj
+    find('h3', text: 'Sobre sua empresa')
   end
 
-  def step6?
-    find('h3', 'Escolha uma imagem para o avatar')
+  def check_page_title_step4
+    find('h3', text: 'Seu endereço')
   end
 
-  def step7?
-    find('h3', 'Tudo certo?')
+  def check_page_title_step6
+    find('h3', text: 'Escolha uma imagem para o avatar')
+  end
+
+  def check_page_title_step7
+    find('h3', text: 'Tudo certo?')
   end
 end
+World(Commons)

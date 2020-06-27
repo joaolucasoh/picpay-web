@@ -3,7 +3,7 @@
 require_relative 'home_page'
 
 class PicPayPages
-  attr_accessor :home_page, :register_step_one
+  attr_accessor :home_page, :register_steps
 
   def initialize
     @home_page = HomePage.new

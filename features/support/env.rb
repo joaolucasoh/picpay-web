@@ -2,11 +2,15 @@
 
 require 'capybara/cucumber'
 require 'capybara'
+require 'cep_brasil'
+require 'cpf_faker'
 require 'faker'
 require 'pry'
 require 'report_builder'
 require 'selenium-webdriver'
 require 'site_prism'
+
+include Capybara::DSL
 
 case ENV['BROWSER']
 when 'firefox'
