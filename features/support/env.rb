@@ -2,11 +2,11 @@
 
 require 'capybara/cucumber'
 require 'capybara'
-require 'cep_brasil'
 require 'cpf_faker'
 require 'faker'
 require 'pry'
 require 'report_builder'
+require 'rest-client'
 require 'selenium-webdriver'
 require 'site_prism'
 
