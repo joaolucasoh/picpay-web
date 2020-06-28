@@ -17,7 +17,7 @@ The project uses the following technologies:
 
 ### Setup folder contains the step by step to install / download the prerequisites:
 
-Inside the Setup folder, there is a step-by-step guide for installing all dependencies according to Windows, MacOS and Linux platforms.
+Inside the Setup folder, there is a step-by-step guide for installing all dependencies according to Windows, MacOS and Linux operational system.
 
 ### Installing all gems from the gemfile file:
 
