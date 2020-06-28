@@ -57,7 +57,7 @@ class RegisterSteps
   end
 
   def upload_avatar
-    attach_file('/Users/joaolucas/Documents/automacao/pessoal/challenges/picpay/picpay/picpay-web/img/avatar.png')
+    attach_file('/Users/joaolucas/Documents/automacao/pessoal/challenges/picpay/picpay/picpay-web/features/support/img/avatar.png')
     sleep 1
     find('.check').click if find('.check', visible: true)
     click_on('Continuar')
@@ -70,5 +70,10 @@ class RegisterSteps
 
   def refresh_page
     page.driver.browser.navigate.refresh
+  end
+
+  def am_i_on_login_page?
+    find_by('cnpj') && find_by('email') && find_by('password')
+    has_css?("[href='/esqueci-a-senha']") && has_button?('Entrar')
   end
 end

@@ -42,3 +42,8 @@ Then('you must confirm the data and complete the registration') do
   @picpay.register_steps.review_page
   @picpay.register_steps.refresh_page
 end
+
+Then('I must be directed to the users login page') do
+  expect(page).to have_current_path('https://lojista.picpay.com/login')
+  expect(@picpay.register_steps.am_i_on_login_page?).to be_truthy
+end

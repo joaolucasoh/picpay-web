@@ -26,7 +26,8 @@ Feature: Routine for registering new customers on the picpay ecommerce platform.
         Then insert your address
         And select the '<plan>' and fill in company infos and your '<category>'
         And upload a avatar to account
-        Then you must confirm the data and complete the registration
+        And you must confirm the data and complete the registration
+        Then I must be directed to the users login page
         Examples:
             | type            | plan    | category                |
             | Pessoa física   | 14 dias | Arte e Antiguidades     |
