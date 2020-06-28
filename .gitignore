@@ -1,3 +1,4 @@
 log/screenshots/*.png
 log/*.html
 log/*.json
+Gemfile.lock
