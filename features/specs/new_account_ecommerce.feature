@@ -29,7 +29,8 @@ Feature: Routine for registering new customers on the picpay ecommerce platform.
         And you must confirm the data and complete the registration
         Then I must be directed to the users login page
         Examples:
-            | type            | plan    | category                |
-            | Pessoa física   | 14 dias | Arte e Antiguidades     |
-            | Pessoa jurídica | 30 dias | Automóveis e Acessórios |
+            | type            | plan    | category                 |
+            | Pessoa física   | 14 dias | Arte e Antiguidades      |
+            | Pessoa física   | 1 dia   | Arquitetura e Engenharia |
+            | Pessoa jurídica | 30 dias | Automóveis e Acessórios  |
 
