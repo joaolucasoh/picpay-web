@@ -5,11 +5,11 @@ When('I am on the home page') do
 end
 
 When('I fill in the {string} with the {string}') do |field, data|
-  @picpay.register_step_one.insert_data(field, data)
+  @picpay.step_one_fields.insert_data(field, data)
 end
 
 Then('the {string} should be displayed') do |msg_alert|
-  @picpay.register_step_one.validate_error_alert(msg_alert)
+  @picpay.step_one_fields.validate_error_alert(msg_alert)
 end
 
 #########
