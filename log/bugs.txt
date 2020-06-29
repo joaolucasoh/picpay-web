@@ -1,0 +1,7 @@
+Bugs/Melhorias ecommerce picpay:
+
+- No step4, não é permitido colocar letras e números no campo número, porém, não é avisado nesse mesmo step, apenas quando está sendo finalizado o cadastro. Sendo assim, é necessário voltar os steps pra poder corrigir.
+- Problema semelhante acontece no step5, no campo website. É permitido digitar qualquer coisa fora do padrão de uma url, porem ao tentar finalizar o cadastro é exibido o alerta e também é preciso voltar os steps para corrigir.
+- No step7 não exibe nenhuma mensagem informativa sobre o sucesso ou não do cadastro da conta. Simplesmente fica uma tela branca. Após teclar em F5, é direcionado para a tela de login.
+- Ao tentar continuar a proposta sem selecionar se é PJ ou PF, não exibe nenhuma mensagem e não há ação.
+- Não há validação de CPF ou CNPJ inválido.

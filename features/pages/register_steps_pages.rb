@@ -9,12 +9,15 @@ class RegisterSteps
 
   def insert_access_info
     within('#header') { click_on('Crie sua conta') }
-    # email = find_by('email').set(Faker::Internet.email)
-    find_by('email').set('ecommerce@picpay.com')
-    find_by('email_confirmation').set('ecommerce@picpay.com')
-    # password = find_by('password').set('Faker::Internet.password(min_length: 8)')
-    find_by('password').set('mudar@123')
-    find_by('password_confirmation').set('mudar@123')
+
+    email_saved = Faker::Internet.email
+    password_saved = Faker::Internet.password(min_length: 8)
+
+    find_by('email').set(email_saved)
+    find_by('email_confirmation').set(email_saved)
+    find_by('password').set(password_saved)
+    find_by('password_confirmation').set(password_saved)
+
     click_on('Continuar')
   end
 
@@ -57,7 +60,8 @@ class RegisterSteps
   end
 
   def upload_avatar
-    attach_file('/Users/joaolucas/Documents/automacao/pessoal/challenges/picpay/picpay/picpay-web/features/support/img/avatar.png')
+    cover_file = File.join(Dir.pwd, 'features/support/img/avatar.png')
+    attach_file(cover_file)
     sleep 1
     find('.check').click if find('.check', visible: true)
     click_on('Continuar')

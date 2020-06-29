@@ -8,7 +8,7 @@ Basically we need to install:
 
 * Ruby
 * vscode
-* chromedriver
+* chromedriver/geckodriver
 
 ## Technologies
 The project uses the following technologies:
